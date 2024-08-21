@@ -1,0 +1,10 @@
+@article{hassan2024robotic,
+  title={Robotic Odor Source Localization via Vision and Olfaction Fusion Navigation Algorithm},
+  author={Hassan, Sunzid and Wang, Lingxiao and Mahmud, Khan Raqib},
+  journal={Sensors},
+  volume={24},
+  number={7},
+  pages={2309},
+  year={2024},
+  publisher={MDPI}
+}

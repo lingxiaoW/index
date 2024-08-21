@@ -1,0 +1,9 @@
+@article{miao2022coordination,
+  title={Coordination of distributed unmanned surface vehicles via model-based reinforcement learning methods},
+  author={Miao, Runlong and Wang, Lingxiao and Pang, Shuo},
+  journal={Applied Ocean Research},
+  volume={122},
+  pages={103106},
+  year={2022},
+  publisher={Elsevier}
+}

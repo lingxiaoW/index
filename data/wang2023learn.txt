@@ -1,0 +1,8 @@
+@inproceedings{wang2023learn,
+  title={Learn to Trace Odors: Robotic Odor Source Localization via Deep Learning Methods with Real-world Experiments},
+  author={Wang, Lingxiao and Yin, Ziyu and Pang, Shuo},
+  booktitle={SoutheastCon 2023},
+  pages={524--531},
+  year={2023},
+  organization={IEEE}
+}

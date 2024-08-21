@@ -1,0 +1,8 @@
+@inproceedings{wang2018auv,
+  title={AUV navigation based on inertial navigation and acoustic positioning systems},
+  author={Wang, Lingxiao and Pang, Shuo},
+  booktitle={OCEANS 2018 MTS/IEEE Charleston},
+  pages={1--8},
+  year={2018},
+  organization={IEEE}
+}

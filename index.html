@@ -450,6 +450,12 @@
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
 
+
+
+
+
+
+
                             <!--Olfaction and Vision Fusion Navigation-->
                             <tr onmouseout="camp_stop()" onmouseover="camp_start()">
                               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -489,7 +495,88 @@
                                 <a href="data/24_MDPI_Sensors_Olfaction_and_Vision_led_OSL.pdf" target="_blank">PDF</a> | <a href="data/hassan2024robotic.txt" target="_blank">Citation</a>
                               </td>
                             </tr>
+                            
 
+                            <!-- Multi-modal Robotic Platform -->
+                            <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <div class="two" id='mira_image'>
+                                    <video  width=100% height=100% muted autoplay loop>
+                                    <source src="images/multi-modal_robot.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                                  <img src='images/Turtlebot.png' width="160">
+                                </div>
+                                <script type="text/javascript">
+                                  function mira_start() {
+                                    document.getElementById('mira_image').style.opacity = "1";
+                                  }
+
+                                  function mira_stop() {
+                                    document.getElementById('mira_image').style.opacity = "0";
+                                  }
+                                  mira_stop()
+                                </script>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10473587">
+                                  <span class="papertitle">Multi-Modal Robotic Platfrom Development for Odor Source Localization</span>
+                                </a>
+                                <br>
+                                Sunzid Hassan,
+                                <strong>Lingxiao Wang</strong>,
+                                Khan Raqib Mahmud
+                                <br>
+                                <em>IEEE International Conference on Robotic Computing (IRC)</em>, 2023
+                                <p></p>
+                                <p>
+                                  Presented a robotic platform developed for the odor source localization task with both visual and olfactory detecting capabilities. 
+                                </p>
+                                <a href="data/IEEE_IRC23__Robot_Platform_Development_for_OSL.pdf" target="_blank">PDF</a> | <a href="data/hassan2023multi.txt" target="_blank">Citation</a>
+                              </td>
+                            </tr>	
+
+                            <!-- Deep Recurrent RL OSL -->
+                            <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <div class="two" id='samurai_image'>
+                                    <video  width=100% height=100% muted autoplay loop>
+                                    <source src="images/recurrent_DRL_video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                                  <img src='images/recurrent_DRL.png' width="160">
+                                </div>
+                                <script type="text/javascript">
+                                  function samurai_start() {
+                                    document.getElementById('samurai_image').style.opacity = "1";
+                                  }
+          
+                                  function samurai_stop() {
+                                    document.getElementById('samurai_image').style.opacity = "0";
+                                  }
+                                  samurai_stop()
+                                </script>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10473576">
+                                  <span class="papertitle">Robotic Odor Source Localization via End-to-End Recurrent Deep Reinforcement Learning</span>
+                                </a>
+                                <br>
+                                <strong>Lingxiao Wang</strong>,
+                                Shuo Pang
+                                <br>
+                                <em>IEEE International Conference on Robotic Computing (IRC)</em>, 2023
+                                <p></p>
+                                <p>
+                                  Integrated Twin Delayed Deep Deterministic Policy Gradient (TD3) with recurrent neural network (RNN) and implemented in the robotic odor source localization task.
+                                </p>
+                                <a href="data/Robotic_Odor_Source_Localization_via_End-to-End_Recurrent_Deep_Reinforcement_Learning.pdf" target="_blank">PDF</a> | <a href="data/wang2023robotic.txt" target="_blank">Citation</a>
+                              </td>
+                            </tr>		
 
                             <!-- Learn to trace odors -->
                             <tr onmouseout="difsurvey_stop()" onmouseover="difsurvey_start()">
@@ -532,7 +619,7 @@
                               </td>
                             </tr>      
 
-
+                            
 
                             <!-- Fuzzy Bio-inspired -->
                             <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
@@ -1269,90 +1356,9 @@
 
           <!--
 
-
-                  <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                      <div class="one">
-                        <div class="two" id='mira_image'>
-                          <img src='images/mira_after.jpg' width="160"></div>
-                        <img src='images/mira_before.jpg' width="160">
-                      </div>
-                      <script type="text/javascript">
-                        function mira_start() {
-                          document.getElementById('mira_image').style.opacity = "1";
-                        }
-
-                        function mira_stop() {
-                          document.getElementById('mira_image').style.opacity = "0";
-                        }
-                        mira_stop()
-                      </script>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                      <a href="https://openreview.net/forum?id=AmPeAFzU3a4">
-                        <span class="papertitle">MIRA: Mental Imagery for Robotic Affordances</span>
-                      </a>
-                      <br>
-                      <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-                      <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-                      <a href="https://andyzeng.github.io/">Andy Zeng</a>, <strong>Jonathan T. Barron</strong>, 
-                      <a href="https://yilundu.github.io/">Yilun Du</a>,
-                      <a href="https://people.csail.mit.edu/weichium/">Wei-Chiu Ma</a>,
-                      <a href="https://anthonysimeonov.github.io/">Anthony Simeonov</a>,
-                      <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-                      <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
-                      <br>
-                      <em>CoRL</em>, 2022
-                      <p></p>
-                      <p>
-                        NeRF lets us synthesize novel orthographic views that work well with pixel-wise algorithms for robotic manipulation.
-                      </p>
-                    </td>
-                  </tr>		
+	
                   
-                  <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                      <div class="one">
-                        <div class="two" id='samurai_image'>
-                          <img src='images/samurai_after.jpg' width="160"></div>
-                        <img src='images/samurai_before.jpg' width="160">
-                      </div>
-                      <script type="text/javascript">
-                        function samurai_start() {
-                          document.getElementById('samurai_image').style.opacity = "1";
-                        }
 
-                        function samurai_stop() {
-                          document.getElementById('samurai_image').style.opacity = "0";
-                        }
-                        samurai_stop()
-                      </script>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                      <a href="https://markboss.me/publication/2022-samurai/">
-                        <span class="papertitle">SAMURAI: Shape And Material from Unconstrained Real-world Arbitrary Image Collections</span>
-                      </a>
-                      <br>
-                      <a href="https://markboss.me">Mark Boss</a>, 
-                      <a href="">Andreas Engelhardt</a>, 
-                      <a href="https://abhishekkar.info/">Abhishek Kar</a>, 
-                      <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, 
-                      <a href="https://deqings.github.io/">Deqing Sun</a>, 
-                      <strong>Jonathan T. Barron</strong>,
-                      <a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/computergrafik/computer-graphics/staff/prof-dr-ing-hendrik-lensch/">Hendrik P. A. Lensch</a>,
-                      <a href="https://varunjampani.github.io">Varun Jampani</a>
-                      <br>
-                      <em>NeurIPS</em>, 2022
-                      <br>
-                      <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a>
-                      <p></p>
-                      <p>
-        A joint optimization framework for estimating shape, BRDF, camera pose, and illumination from in-the-wild image collections.
-                      </p>
-                    </td>
-                  </tr>		
 
                   <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
                   <td style="padding:20px;width:25%;vertical-align:middle">
@@ -4416,7 +4422,7 @@
                 <td style="padding:0px">
                   <br>
                   <p style="text-align:center;font-size:small;">
-                    Updated at 10-03-2024 | <a href="https://github.com/jonbarron/jonbarron_website">Website Template</a> 
+                    Updated at 10-11-2024 | <a href="https://github.com/jonbarron/jonbarron_website">Website Template</a> 
                   </p>
                 </td>
               </tr>

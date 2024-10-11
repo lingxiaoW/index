@@ -1,0 +1,8 @@
+@inproceedings{hassan2023multi,
+  title={Multi-Modal Robotic Platform Development for Odor Source Localization},
+  author={Hassan, Sunzid and Wang, Lingxiao and Mahmud, Khan Raqib},
+  booktitle={2023 Seventh IEEE International Conference on Robotic Computing (IRC)},
+  pages={59--62},
+  year={2023},
+  organization={IEEE}
+}

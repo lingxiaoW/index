@@ -1,0 +1,6 @@
+@article{hassan2024integrating,
+  title={Integrating Vision and Olfaction via Multi-Modal LLM for Robotic Odor Source Localization},
+  author={Hassan, Sunzid and Wang, Lingxiao and Mahmud, Khan Raqib},
+  year={2024},
+  publisher={Preprints}
+}

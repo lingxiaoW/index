@@ -350,9 +350,6 @@
                       <li>
                         &#127891 <strong>12-30-2021</strong>: I obtain my Ph.D. in Electrical Engineering and Computer Science from <a href="https://daytonabeach.erau.edu/college-engineering/electrical-engineering-computer-science" target="_blank">Embry-Riddle Aeronautical University</a>.
                       </li>
-
-                            
-
                       </div>
                       
                       <!-- publication -->
@@ -373,8 +370,47 @@
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
 
-
-
+                            <!-- LLM-based Vision and Olfaction Integration -->
+                            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <div class="two" id='malle_image'><video  width=100% height=100% muted autoplay loop>
+                                    <source src="images/LLM_OSL_square.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video></div>
+                                  <img src='images/LLM_OSL_cover.png' width="160">
+                                </div>
+                                <script type="text/javascript">
+                                  function malle_start() {
+                                    document.getElementById('malle_image').style.opacity = "1";
+                                  }
+          
+                                  function malle_stop() {
+                                    document.getElementById('malle_image').style.opacity = "0";
+                                  }
+                                  malle_stop()
+                                </script>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <a href="https://www.mdpi.com/1424-8220/24/24/7875">
+                                  <span class="papertitle">Integrating Vision and Olfaction via Multi-Modal LLM for Robotic Odor Source Localization</span>
+                                </a>
+                                <br>
+                                Sunzid Hassan,
+                                <strong>Lingxiao Wang</strong>,
+                                Khan Raqib Mahmud
+                                <br>
+                                <em>Sensor</em>, 2024
+                                <br>
+                                <p></p>
+                                <p>
+                                Developed a multi-modal navigation system that employs an LLM to process both visual and olfactory sensor readings to find a hidden odor source. 
+                                </p>
+                                <a href="data/LLM_OSL_paper.pdf" target="_blank">PDF</a> | 
+                                <a href="https://sunzidhassan.github.io/24_LLMOSL/" target="_blank">Project Page</a> | 
+                                <a href="data/hassan2024integrating.txt" target="_blank">Citation</a>
+                              </td>
+                            </tr>
 
 
 
@@ -1072,7 +1108,7 @@
                                 <span class="papertitle">ELEN 471: Automatic Control Systems</span>
                                 <br>
                                 <br>
-                                <em>Every Fall Semester &#127810</em>
+                                <em>Every Fall Quarter &#127810</em>
                                 <br>
                                 <em>Electrical Engineering, LaTech</em>
                                 <p></p>
@@ -1096,7 +1132,7 @@
                                 <span class="papertitle">ELEN 472/572: Introduction to Digital Control Systems</span>
                                 <br>
                                 <br>
-                                <em>Every Winter Semester <i class="fa-solid fa-snowflake"></i></em>
+                                <em>Every Winter Quarter <i class="fa-solid fa-snowflake"></i></em>
                                 <br>
                                 <em>Electrical Engineering, LaTech</em>
                                 <p></p>
@@ -1104,7 +1140,7 @@
                                 This course focuses on digital control systems. We will cover <b>(i)</b> digital signals, <b>(ii)</b> digital system modeling, <b>(iii)</b> digital control theories, and <b>(iv)</b> real-world examples of digital control systems.  
                                 <br>
                                 <br>
-                                Teaching Evaluation: <b>4.0/4.0</b> (Reports: <a href="data/WANG_LINGXIAO--WINTER-2022-2023.pdf" target="_blank">2022</a>)
+                                Teaching Evaluation: <b>3.9/4.0</b> (Reports: <a href="data/WANG_LINGXIAO--WINTER-2022-2023.pdf" target="_blank">2022</a> | <a href="data/WANG_LINGXIAO--WINTER 2023-2024.pdf" target="_blank">2023</a>)
                                 </p>
                               </td>
                             </tr>
@@ -1120,7 +1156,7 @@
                                 <span class="papertitle">ELEN 451/CSC 557: Hands-on AI and Robotics</span>
                                 <br>
                                 <br>
-                                <em>Every Spring Semester &#127793</em>
+                                <em>Every Spring Quarter &#127793</em>
                                 <br>
                                 <em>Electrical Engineering & Computer Science, LaTech</em>
                                 <p></p>
@@ -1322,47 +1358,7 @@
                   </tr> 
 
 
-                  <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                      <div class="one">
-                        <div class="two" id='malle_image'>
-                          <img src='images/MalleConv_after.jpg' width="160"></div>
-                        <img src='images/MalleConv_before.jpg' width="160">
-                      </div>
-                      <script type="text/javascript">
-                        function malle_start() {
-                          document.getElementById('malle_image').style.opacity = "1";
-                        }
 
-                        function malle_stop() {
-                          document.getElementById('malle_image').style.opacity = "0";
-                        }
-                        malle_stop()
-                      </script>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                      <a href="https://yifanjiang.net/MalleConv.html">
-                        <span class="papertitle">Fast and High-Quality Image Denoising via Malleable Convolutions</span>
-                      </a>
-                      <br>
-                      <a href="https://yifanjiang.net/">Yifan Jiang</a>,
-                      <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
-                      <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-                      <strong>Jonathan T. Barron</strong>,
-                      <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
-                      <a href="https://tianfan.info/">Tianfan Xue</a>
-                      <br>
-                      <em>ECCV</em>, 2022
-                      <br>
-                      <a href="https://yifanjiang.net/MalleConv.html">project page</a>
-                      /
-                      <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
-                      <p></p>
-                      <p>
-                      We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
-                      </p>
-                    </td>
-                  </tr>
                   
                   <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
                     <td style="padding:20px;width:25%;vertical-align:middle">

@@ -1,0 +1,8 @@
+@article{mahmud2025knowledge,
+  title={A knowledge-driven framework for robotic odor source localization using large language models},
+  author={Mahmud, Khan Raqib and Wang, Lingxiao and Hassan, Sunzid and Zhang, Zheng},
+  journal={Robotics and Autonomous Systems},
+  pages={104915},
+  year={2025},
+  publisher={Elsevier}
+}

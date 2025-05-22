@@ -1,8 +1,0 @@
-@inproceedings{wang2021learn,
-  title={Learn to trace odors: Autonomous odor source localization via deep learning methods},
-  author={Wang, Lingxiao and Pang, Shuo and Li, Jinlong},
-  booktitle={2021 20th IEEE International Conference on Machine Learning and Applications (ICMLA)},
-  pages={1429--1436},
-  year={2021},
-  organization={IEEE}
-}

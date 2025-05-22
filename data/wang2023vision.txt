@@ -1,8 +1,0 @@
-@inproceedings{wang2023vision,
-  title={Vision and olfactory-based wildfire monitoring with uncrewed aircraft systems},
-  author={Wang, Lingxiao and Pang, Shuo and Noyela, Mantasha and Adkins, Kevin and Sun, Lulu and El-Sayed, Marwa},
-  booktitle={2023 20th International Conference on Ubiquitous Robots (UR)},
-  pages={716--723},
-  year={2023},
-  organization={IEEE}
-}

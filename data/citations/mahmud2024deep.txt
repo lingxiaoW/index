@@ -1,0 +1,8 @@
+@inproceedings{mahmud2024deep,
+  title={Deep Learning-based Wildfire Smoke Detection using Uncrewed Aircraft System Imagery},
+  author={Mahmud, Khan Raqib and Wang, Lingxiao and Liu, Xiyuan and Jiahao, L and Hassan, Sunzid},
+  booktitle={2024 21st International Conference on Ubiquitous Robots (UR)},
+  pages={580--587},
+  year={2024},
+  organization={IEEE}
+}

@@ -1,0 +1,8 @@
+@inproceedings{wang2023robotic,
+  title={Robotic Odor Source Localization via End-to-End Recurrent Deep Reinforcement Learning},
+  author={Wang, Lingxiao and Pang, Shuo},
+  booktitle={2023 Seventh IEEE International Conference on Robotic Computing (IRC)},
+  pages={43--50},
+  year={2023},
+  organization={IEEE}
+}

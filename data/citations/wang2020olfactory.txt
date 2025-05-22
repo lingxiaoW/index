@@ -1,0 +1,10 @@
+@article{wang2020olfactory,
+  title={Olfactory-based navigation via model-based reinforcement learning and fuzzy inference methods},
+  author={Wang, Lingxiao and Pang, Shuo and Li, Jinlong},
+  journal={IEEE Transactions on Fuzzy Systems},
+  volume={29},
+  number={10},
+  pages={3014--3027},
+  year={2020},
+  publisher={IEEE}
+}

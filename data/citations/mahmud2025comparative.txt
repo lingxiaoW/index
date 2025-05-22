@@ -1,0 +1,8 @@
+@inproceedings{mahmud2025comparative,
+  title={Comparative Analysis of Deep Learning Approaches for Predicting Thermomechanical Behavior of Shape Memory Polymers},
+  author={Mahmud, Khan Raqib and Wang, Lingxiao and Chen, Jinyuan and Liu, Xiyuan and Hassan, Sunzid},
+  booktitle={SoutheastCon 2025},
+  pages={950--957},
+  year={2025},
+  organization={IEEE}
+}

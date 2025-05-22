@@ -1,9 +1,0 @@
-@article{wang2022robotic,
-  title={Robotic odor source localization via adaptive bio-inspired navigation using fuzzy inference methods},
-  author={Wang, Lingxiao and Pang, Shuo},
-  journal={Robotics and Autonomous Systems},
-  volume={147},
-  pages={103914},
-  year={2022},
-  publisher={Elsevier}
-}

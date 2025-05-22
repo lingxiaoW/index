@@ -1,8 +1,0 @@
-@inproceedings{wang2019chemical,
-  title={Chemical plume tracing using an auv based on pomdp source mapping and a-star path planning},
-  author={Wang, Lingxiao and Pang, Shuo},
-  booktitle={OCEANS 2019 MTS/IEEE SEATTLE},
-  pages={1--7},
-  year={2019},
-  organization={IEEE}
-}

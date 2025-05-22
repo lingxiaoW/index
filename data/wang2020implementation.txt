@@ -1,8 +1,0 @@
-@inproceedings{wang2020implementation,
-  title={An implementation of the adaptive neuro-fuzzy inference system (anfis) for odor source localization},
-  author={Wang, Lingxiao and Pang, Shuo},
-  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages={4551--4558},
-  year={2020},
-  organization={IEEE}
-}

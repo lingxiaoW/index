@@ -45,7 +45,6 @@
 
                     <p style="text-align:center">
                       <a href="mailto:lwang@latech.edu" target="_blank"><i class="fa-regular fa-envelope"></i> Email</a> &nbsp;|&nbsp;
-                      <!-- <a href="data/CV/CV - Lingxiao Wang - Current.pdf" target="_blank">CV</a> &nbsp;|&nbsp; -->
                       <a href="https://www.researchgate.net/profile/Lingxiao-Wang" target="_blank"><i class="ai ai-researchgate" style='font-size:18px'></i> Research Gate</a> &nbsp;|&nbsp;
                       <a href="https://scholar.google.com/citations?user=8UI5lZAAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar" style='font-size:15px'></i>  Google Scholar</a> &nbsp;|&nbsp;
                       <a href="https://github.com/lingxiaoW"><i class="fa-brands fa-github" target="_blank"></i> Github</a> &nbsp;|&nbsp;
@@ -64,20 +63,29 @@
               <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
-                    <div id="filters" class="button-group">
+                    <div class="button-group" id="category-filters">
                       <!-- <button class="button" data-filter="*">Show All</button> -->
-                      <button class="button" data-filter=".news">News</button>
-                      <button class="button is-checked" data-filter=".research">Research</button>
+                      <button class="button is-checked" data-filter=".news">News</button>
+                      <button class="button" data-filter=".research">Research</button>
                       <button class="button" data-filter=".publication">Publication</button>
-                      <!-- <button class="button" data-filter=".grants">Grants</button> -->
                       <button class="button" data-filter=".teaching">Teaching</button>
                       <button class="button" data-filter=".advising">Advising</button>
+                    </div>
+
+                    <!-- Nested Year Buttons (hidden by default) -->
+                    <div class="button-group" id="year-filters" style="display: none;">
+                        <button class="button year-button is-checked" data-filter="*">All</button>
+                        <button class="button year-button" data-filter=".y2025">2025</button>
+                        <button class="button year-button" data-filter=".y2024">2024</button>
+                        <button class="button year-button" data-filter=".y2023">2023</button>
+                        <button class="button year-button" data-filter=".y2022">2022</button>
+                        <button class="button year-button" data-filter=".y2021">2021</button>
                     </div>
 
                     <div class="grid">
 
                       <!-- research -->
-                      <div class="list-item research" data-category="research">
+                      <div class="grid-item research">
                         
                         <!-- Reserach Statement -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -162,27 +170,6 @@
                                 </p>
                               </td>
                             </tr>
-
-                            <!--Multi-Agent Collaboration and Robot Localization-->
-                            <!-- <tr>
-                              <td style="padding:20px;width:25%;vertical-align:middle">
-                                <div class="one">
-                                  <img src='images/multi-agent.png' width=160>
-                                </div>
-                              </td>
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                <span class="papertitle">Multi-Agent Collaboration and Robot Localization</span>
-                                <br>
-                                <br>
-                                <em>2020 - 2022, Research Assistant</em>
-                                <br>
-                                <em>ERAU</em>
-                                <p></p>
-                                <p>
-                                This project involves designing <i>Multi-Agent Collaboration Algorithms</i> for controlling a fleet of robots and <i>Sensor Data Fusion Algorithms</i> for Robot Localization.
-                                </p>
-                              </td>
-                            </tr> -->
                           </tbody>
                         </table>
                         
@@ -268,224 +255,283 @@
 
                       </div>
 
-                      <!-- grants -->
-                      <!-- 
-                      <div class="list-item grants" data-category="grants">
 
-                        
-                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                          <tbody>
-                            <tr>
-                              <td style="padding:0px;width:100%;vertical-align:middle">
-                                <p class="papertitle"><b>☀️ Current Grants</b></p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        
+                      <!-- news 2025 -->
+                      <div class="grid-item news y2025">
+                        <!-- News table -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
 
-                            
+                            <!--June 2025-->
                             <tr>
                               <td style="padding:20px;width:25%;vertical-align:middle">
-                                <div class="one">
-                                  <img src='images/bor_logo.png' width=160>
+                                <div class="three">
+                                  <img src='images/news/2025/june_research_talk.png' width=160>
                                 </div>
                               </td>
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                <span class="papertitle">Advancing Embodied AI in Robotic Odor Source Localization</span>
-                                <br>
-                                <br>
-                                <em>2024 - 2027, Principal Investigator, $108K</em>
-                                <br>
-                                <em><a href="https://rsi.laregents.edu/" target="_blank">Louisiana Board of Regents</a></em>
-                                <p></p>
-                                <p>
-                                This project aims on developing a navigation model to guide a robot in finding a hidden odor source location with visual and olfactory sensors.
-                                <br>
-                                <br>
-                                </p>
+
+                              <td style="padding:20px;width:75%;">
+                                <div style="display: table; height: 100px;">
+                                  <div style="display: table-cell; vertical-align: middle;">
+                                    <div>
+                                      <span class="papertitle">June 2025</span>
+                                    </div>
+                                    <div style="margin-top: 0.5em;">
+                                      <p style="margin: 0;">
+                                        🎤 <strong>06-02</strong>: I gave a <strong><em>Research Talk</em></strong> at the
+                                        <a href="https://events.vtools.ieee.org/m/486172" target="_blank">IEEE Shreveport Section</a>
+                                        for Robotic Odor Source Localization. Thanks to
+                                        <a href="https://ulmapps.ulm.edu/facultyactivities/profile/sreekumari" target="_blank">Dr. Prasanthi Sreekumari</a>
+                                        for hosting!
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
 
-                            
+                            <!--April 2025-->
                             <tr>
                               <td style="padding:20px;width:25%;vertical-align:middle">
-                                <div class="one">
-                                  <img src='images/laspace_logo.png' width=160>
+                                <div class="three">
+                                  <img src='images/news/2025/medium_cover.png' width=160>
                                 </div>
                               </td>
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                <span class="papertitle">Deep Learning-Based Aerosol and Ocean Parameter Retrieval from Polarimeter and Lidar Data</span>
-                                <br>
-                                <br>
-                                <em>2024 - 2025, Principal Investigator, $70K</em>
-                                <br>
-                                <em><a href="https://lanasaepscor.lsu.edu/" target="_blank">Loisiana Space Grant Consortium</a></em>
-                                <p></p>
-                                <p>
-                                This project aims to develop a deep learning model to predict Aerosol and Ocean parameters from Polarimeter and Lidar sensor data. 
-                                </p>
+
+                              <td style="padding:20px;width:75%;">
+                                <div style="display: table; height: 100px;">
+                                  <div style="display: table-cell; vertical-align: middle;">
+                                    <div>
+                                      <span class="papertitle">April 2025</span>
+                                    </div>
+                                    <div style="margin-top: 0.5em;">
+                                      <ul style="margin: 0; padding-left: 20px;">
+                                        <li>
+                                          📰 <strong>04-15</strong>: Our robotic CO2 monitoring project is covered in the 
+                                          <a href="https://www.shreveportbossieradvocate.com/business/louisiana-tech-ruston-research-grants-to-fight-pollution/article_53b2c059-1ddd-4bf4-863c-a833015d936f.html?#uid=" target="_blank">
+                                            Shreveport News
+                                          </a>
+                                        </li>
+                                        <li>
+                                          🔍 <strong>04-02</strong>: Our <strong><em>three projects</em></strong> were selected to be funded by 
+                                          <a href="https://rsi.laregents.edu/" target="_blank">Louisiana Board of Regents</a> and 
+                                          <a href="https://rsi.laregents.edu/" target="_blank">Louisiana Department of Transportation & Development</a>.
+                                          Thanks for the support!
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
 
-
-                            
+                            <!--March 2025-->
                             <tr>
                               <td style="padding:20px;width:25%;vertical-align:middle">
-                                <div class="one">
-                                  <img src='images/lamda_logo.png' width=160>
+                                <div class="three">
+                                  <img src='images/news/2025/panel_talk.png' width=160>
                                 </div>
                               </td>
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                <span class="papertitle">Predicting New Thermoset Shape Memory Polymers via Transformers and Graphic Neural Networks</span>
-                                <br>
-                                <br>
-                                <em>2024 - 2025, Principal Investigaor, $40K</em>
-                                <br>
-                                <em><a href="https://rsi.laregents.edu/" target="_blank">Louisiana Board of Regents</a></em>
-                                <p></p>
-                                <p>
-                                This project focuses on predicting new Thermoset Shape Memory Polymers by using customized Transformers and Graphic Neural Networks. 
-                                </p>
+
+                              <td style="padding:20px;width:75%;">
+                                <div style="display: table; height: 100px;"> <!-- 100px = image height -->
+                                  <div style="display: table-cell; vertical-align: middle;">
+                                    <div>
+                                      <span class="papertitle">March 2025</span>
+                                    </div>
+                                    <div style="margin-top: 0.5em;">
+                                      <ul style="margin: 0; padding-left: 20px;">
+                                        <li>
+                                          🎤 <strong>03-18</strong>: I gave a <strong><em>Panel Talk</em></strong> at 
+                                          <a href="https://www.ceraweek.com/en" target="_blank">S&P CERAWeek</a>.
+                                          Thanks for <a href="https://www.linkedin.com/in/ashwithchilvery/" target="_blank">Dr. Chilvery</a>!
+                                        </li>
+                                        <li>
+                                          📄 <strong>03-04</strong>: Our <strong><em>Paper</em></strong> on wildfire prediction was published on 
+                                          <a href="https://www.mdpi.com/2227-7390/13/7/1046" target="_blank">Mathematics</a>.
+                                        </li>
+                                        <li>
+                                          📄 <strong>03-01</strong>: Our <strong><em>Paper</em></strong> on Semantic Odor Source Localization is accepted at
+                                          <a href="https://www.airc.org/" target="_blank">AIRC 2025</a>.
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <!--Feb 2025-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="three">
+                                  <img src='images/news/2025/fuel_logo.png' width=160>
+                                </div>
+                              </td>
+
+                              <td style="padding:20px;width:75%;">
+                                <div style="display: table; height: 100px;"> <!-- 100px = image height -->
+                                  <div style="display: table-cell; vertical-align: middle;">
+                                    <div>
+                                      <span class="papertitle">February 2025</span>
+                                    </div>
+                                    <div style="margin-top: 0.5em;">
+                                      <ul style="margin: 0; padding-left: 20px;">
+                                        <li>
+                                          &#128269 <strong>02-28</strong>: Our <strong><em>Project</em></strong> on Workforce Development is selected to be funded by <a href="https://fuelouisiana.org/" target="_blank">NSF FUEL</a>. Thanks!
+                                        </li>
+                                        <li>
+                                          📄 <strong>02-15</strong>: Our <strong><em>Two Papers</em></strong> were accepted on 
+                                          <a href="https://ieeesoutheastcon.org/" target="_blank">IEEE Southeastcon 2025</a>.
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <!--Jan 2025-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="three">
+                                  <img src='images/news/2025/elsevier_logo.png' width=160>
+                                </div>
+                              </td>
+
+                              <td style="padding:20px;width:75%;">
+                                <div style="display: table; height: 100px;"> <!-- 100px = image height -->
+                                  <div style="display: table-cell; vertical-align: middle;">
+                                    <div>
+                                      <span class="papertitle">January 2025</span>
+                                    </div>
+                                    <div style="margin-top: 0.5em;">
+                                      <ul style="margin: 0; padding-left: 20px;">
+                                        <li>
+                                          &#128269 <strong>01-13</strong>: Our <strong><em>Project</em></strong> on robotic-based gas monitoring is selected to be funded by <a href="https://fuelouisiana.org/" target="_blank">NSF FUEL</a>. Thanks!
+                                        </li>
+                                        <li>
+                                          &#128221 <strong>01-11</strong>: Our <strong><em>Paper</em></strong> on LLM-based Odor Source Localization is published on <a href="https://doi.org/10.1016/j.robot.2025.104915" target="_blank">Robotics and Autonomous Systems</a>.
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
 
                           </tbody>
                         </table>
-                      </div> 
-                      -->
-
-                      <!-- news -->
-                      <div class="list-item news" data-category="news">
-
-                      <strong>Notation</strong>: &#128221 <strong>Paper</strong> | &#128269 <strong>Grant</strong> | &#127891 <strong>Student Graduation</strong> | &#127908 <strong>Research Talk</strong> | 📰 <strong>Medium</strong>
-                      <br>
-
-                      <p class="papertitle" id="2025"><b>2025</b></p>
-                      <li>
-                        &#127908 <strong>06-02-2025</strong>: I gave a Research Talk at the <a href="https://events.vtools.ieee.org/m/486172" target="_blank">IEEE Shreveport Section</a> for robotic odor source localization. Thanks for <a href="https://ulmapps.ulm.edu/facultyactivities/profile/sreekumari" target="_blank">Dr. Prasanthi Sreekumari's</a> hosting!
-                      </li>
-                      <br>
-                      <li>
-                        📰 <strong>04-05-2025</strong>: Our robotic CO2 monitoring project is covered in the <a href="https://www.shreveportbossieradvocate.com/business/louisiana-tech-ruston-research-grants-to-fight-pollution/article_53b2c059-1ddd-4bf4-863c-a833015d936f.html?#uid=" target="_blank">Shreveport News</a>. Check the <a href="images/news/shreveport_coverage.png" target="_blank">pics</a>!
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>04-04-2025</strong>: Our project, entitled "<em>Enhancing Data Retrieval for NASA's Earth and Space Science Measurements using Deep Learning Methods</em>", is selected to be funded by <a href="https://rsi.laregents.edu/" target="_blank">Louisiana BoR</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>04-03-2025</strong>: Our project, entitled "<em>Towards Efficient and Robust Embodied Decision-making in Autonomous Driving</em>", is selected to be funded by <a href="http://wwwsp.dotd.la.gov/Pages/default.aspx" target="_blank">Louisiana Department of Transportation & Development</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>04-02-2025</strong>: Our project, entitled "<em>Enhancing Control Systems Education through the Modernization of the Automatic Control Laboratory at Louisiana Tech University</em>", is selected to be funded by <a href="https://rsi.laregents.edu/" target="_blank">Louisiana BoR</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>03-24-2025</strong>: Our paper, entitled "<em>Enhancing Wildfire Detection via Trend Estimation Under Auto-Regression Errors</em>" is published on <a href="https://www.mdpi.com/2227-7390/13/7/1046" target="_blank">Mathematics</a>.
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>03-14-2025</strong>: Our paper, entitled "<em>Semantic Odor Source Localization via Visual and Olfactory Integrated Navigation</em>" is accepted on IEEE International Conference on AI, Robotics, and Control <a href="https://www.airc.org/" target="_blank">(AIRC 2025)</a>. See you in Savannah, GA!
-                      </li>
-                      <br>
-                      <li>
-                        &#127908 <strong>03-13-2025</strong>: I gave a Panel Talk <a href="images/news/ceraweek_2025.jpg" target="_blank">(pic)</a> at the <a href="https://www.ceraweek.com/en" target="_blank">S&P CERAWeek</a> to introduce our Robotic CO2 Monitoring System and discuss how to enhance the connection between the academia and industries. Thanks for <a href="https://www.linkedin.com/in/ashwithchilvery/" target="_blank">Dr. Ashwith Chilvery's</a> hosting!
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>02-28-2025</strong>: Our project, entitled "<em>Empowering the Future Workforce of Electrical Engineering for Louisiana Energy Industry</em>", is selected to be funded by <a href="https://fuelouisiana.org/" target="_blank">NSF FUEL</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>02-18-2025</strong>: Our two papers, entitled "<em>Deep Learning-Based Aerosol and Ocean Data Retrieval from Satellite Polarimeter Measurements</em>" and "<em>Comparative Analysis of Deep Learning Approaches for Predicting Thermomechanical Behavior of Shape Memory Polymers</em>", are accepted on <a href="https://ieeesoutheastcon.org/" target="_blank">IEEE Southeastcon 2025</a>. See you in Charlotte, NC!
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>01-13-2025</strong>: Our project, entitled "<em>CO2 Monitoring via an Integrated Robotic and Sparse Sensor System</em>", is selected to be funded by <a href="https://fuelouisiana.org/" target="_blank">NSF FUEL</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>01-11-2025</strong>: Our paper, entitled "<em>A Knowledge-Driven Framework for Robotic Odor Source Localization using Large Language Models</em>", is published on <a href="https://doi.org/10.1016/j.robot.2025.104915" target="_blank">Robotics and Autonomous Systems</a>.
-                      </li>
-                      <br>
-
-                      <p class="papertitle" id="2024"><b>2024</b></p>
-                      <li>
-                        &#128221 <strong>12-10-2024</strong>: Our paper, entitled "<em>Integrating Vision and Olfaction via Multi-Modal LLM for Robotic Odor Source Localization</em>", is published on <a href="https://www.mdpi.com/1424-8220/24/24/7875" target="_blank">Sensors</a>.
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>08-02-2024</strong>: Our project, entitled "<em>Predicting New Thermoset Shape Memory Polymers via Transformers and Graphic Neural Networks</em>", is selected to be funded by <a href="https://lamda.rsi.laregents.edu/" target="_blank">Louisiana LAMDA Seed Grant</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#127891 <strong>06-27-2024</strong>: My <b>first</b> Master student, <a href="https://www.linkedin.com/in/sunzid-hassan/">Sunzid Hassan</a>, successfully completed his thesis defense <em>"Robotic Odor Source Localization using Vision and Olfaction Sensing".</em> Congras!
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>06-21-2024</strong>: Our project, entitled "<em>Deep Learning-Based Aerosol and Ocean Parameter Retrieval from Polarimeter and Lidar Data</em>", is selected to be funded by <a href="https://lanasaepscor.lsu.edu/" target="_blank">Louisiana Space Grant Consortium</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>04-05-2024</strong>: Our paper, entitled "<em>Robotic Odor Source Localization via Vision and Olfaction Fusion Navigation Algorithm</em>", is published on <a href="https://www.mdpi.com/1424-8220/24/7/2309" target="_blank">Sensors</a>.
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>04-04-2024</strong>: Our paper, entitled "<em>Deep Learning-based Wildfire Smoke Detection using Uncrewed Aircraft System Imagery</em>", is accepted on <a href="https://2024.ubiquitousrobots.org/" target="_blank">IEEE UR 2024</a>.
-                      </li>
-                      <br>
-                      <li>
-                        &#128269 <strong>04-02-2024</strong>: Our project, entitled "<em>Advancing Embodied AI for Enhanced Robotic Odor Source Localization</em>", is selected to be funded by <a href="https://rsi.laregents.edu/" target="_blank">Louisiana Board of Regent</a>. Thanks!
-                      </li>
-                      <br>
-                      <li>
-                        &#127908 <strong>01-12-2024</strong>: I give a research talk, entitled "<em>Robotic Odor Source Localization via AI Methods</em>", at the <a href="https://www.thecarlab.org/" target="_blank">CAR Lab</a> of University of Delaware. Thanks for Dr. Weisong Shi's hosting!
-                      </li>
-                      <br>
-
-                      <p class="papertitle" id="2023"><b>2023</b></p>
-                      <li>
-                        &#128221 <strong>12-11-2023</strong>: Our two papers, entitled "<em>Multi-modal Robotic Platform Development for Odor Source Localization</em>" and "<em>Robotic Odor Source Localization via End-to-End Recurrent Deep Reinforcement Learning</em>", are accepted on <a href="https://ieeexplore.ieee.org/xpl/conhome/10473521/proceeding" target="_blank">IEEE IRC 2023 Conference</a>. 
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>06-25-2023</strong>: Our paper, entitled "<em>Vision and Olfactory-Based Wildfire Monitoring with Uncrewed Aircraft Systems</em>", is accepted at the <a href="https://ieeexplore.ieee.org/xpl/conhome/10202211/proceeding" target="_blank">IEEE UR 2023</a>.
-                      </li>
-                      <br>
-                      <li>
-                        &#128221 <strong>04-01-2023</strong>: Our paper, entitled "<em>Learn to Trace Odors: Robotic Odor Source Localization via Deep Learning Methods with Real-world Experiments</em>", is accepted at the <a href="https://ieeexplore.ieee.org/abstract/document/10115175" target="_blank">IEEE SoutheastCon 2023</a>.
-                      </li>
-                      <br> 
-                      <li>
-                        &#128221 <strong>02-06-2023</strong>: Our paper, entitled "<em>Autonomous Underwater Vehicle Based Chemical Plume Tracing via Deep Reinforcement Learning Methods</em>", is published on <a href="https://www.mdpi.com/2077-1312/11/2/366" target="_blank">Journal of Marine Science and Engineering</a>.
-                      </li>
-                      <br>
-
-                      <p class="papertitle" id="2022"><b>2022</b></p>
-                      
-                      <li>
-                        &#127881 <strong>09-01-2022</strong>: I start a new position of Assistant Professor of Electrical Engineering at <a href="https://www.latech.edu/" target="_blank">Louisiana Tech University</a>.
-                      </li>
-                      <br>
-                      <li>
-                        &#127881 <strong>01-12-2022</strong>: I start a new position of Visiting Assistant Professor of Electrical Engineering at <a href="https://daytonabeach.erau.edu/college-engineering/electrical-engineering-computer-science" target="_blank">Embry-Riddle Aeronautical University</a>.
-                      </li>
-                      <br>
-
-                      <p class="papertitle" id="2021"><b>2021</b></p>
-                      
-                      <li>
-                        &#127891 <strong>12-30-2021</strong>: I obtain my Ph.D. in Electrical Engineering and Computer Science from <a href="https://daytonabeach.erau.edu/college-engineering/electrical-engineering-computer-science" target="_blank">Embry-Riddle Aeronautical University</a>.
-                      </li>
                       </div>
+                      <!-- news 2024 -->
+                      <div class="grid-item news y2024">
+                                                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                          <tbody>
+
+                            <!--Dec 2024-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="three">
+                                  <img src='images/news/2025/june_research_talk.png' width=160>
+                                </div>
+                              </td>
+
+                              <td style="padding:20px;width:75%;">
+                                <div style="display: table; height: 100px;">
+                                  <div style="display: table-cell; vertical-align: middle;">
+                                    <div>
+                                      <span class="papertitle">December 2024</span>
+                                    </div>
+                                    <div style="margin-top: 0.5em;">
+                                      <p style="margin: 0;">
+                                        &#128221 <strong>12-10</strong>: Our <strong><em>Paper</em></strong> on Multi-Modal LLM for robotic Odor Source Localization is published on <a href="https://www.mdpi.com/1424-8220/24/24/7875" target="_blank">Sensors</a>.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <p class="papertitle" id="2024"><b>2024</b></p>
+                        <li>
+                          
+                        </li>
+                        <br>
+                        <li>
+                          &#128269 <strong>08-02-2024</strong>: Our project, entitled "<em>Predicting New Thermoset Shape Memory Polymers via Transformers and Graphic Neural Networks</em>", is selected to be funded by <a href="https://lamda.rsi.laregents.edu/" target="_blank">Louisiana LAMDA Seed Grant</a>. Thanks!
+                        </li>
+                        <br>
+                        <li>
+                          &#127891 <strong>06-27-2024</strong>: My <b>first</b> Master student, <a href="https://www.linkedin.com/in/sunzid-hassan/">Sunzid Hassan</a>, successfully completed his thesis defense <em>"Robotic Odor Source Localization using Vision and Olfaction Sensing".</em> Congras!
+                        </li>
+                        <br>
+                        <li>
+                          &#128269 <strong>06-21-2024</strong>: Our project, entitled "<em>Deep Learning-Based Aerosol and Ocean Parameter Retrieval from Polarimeter and Lidar Data</em>", is selected to be funded by <a href="https://lanasaepscor.lsu.edu/" target="_blank">Louisiana Space Grant Consortium</a>. Thanks!
+                        </li>
+                        <br>
+                        <li>
+                          &#128221 <strong>04-05-2024</strong>: Our paper, entitled "<em>Robotic Odor Source Localization via Vision and Olfaction Fusion Navigation Algorithm</em>", is published on <a href="https://www.mdpi.com/1424-8220/24/7/2309" target="_blank">Sensors</a>.
+                        </li>
+                        <br>
+                        <li>
+                          &#128221 <strong>04-04-2024</strong>: Our paper, entitled "<em>Deep Learning-based Wildfire Smoke Detection using Uncrewed Aircraft System Imagery</em>", is accepted on <a href="https://2024.ubiquitousrobots.org/" target="_blank">IEEE UR 2024</a>.
+                        </li>
+                        <br>
+                        <li>
+                          &#128269 <strong>04-02-2024</strong>: Our project, entitled "<em>Advancing Embodied AI for Enhanced Robotic Odor Source Localization</em>", is selected to be funded by <a href="https://rsi.laregents.edu/" target="_blank">Louisiana Board of Regent</a>. Thanks!
+                        </li>
+                        <br>
+                        <li>
+                          &#127908 <strong>01-12-2024</strong>: I give a research talk, entitled "<em>Robotic Odor Source Localization via AI Methods</em>", at the <a href="https://www.thecarlab.org/" target="_blank">CAR Lab</a> of University of Delaware. Thanks for Dr. Weisong Shi's hosting!
+                        </li>
+                        <br>
+                      </div>
+                      <!-- news 2023 -->
+                      <div class="grid-item news y2023">
+                        <p class="papertitle" id="2023"><b>2023</b></p>
+                        <li>
+                          &#128221 <strong>12-11-2023</strong>: Our two papers, entitled "<em>Multi-modal Robotic Platform Development for Odor Source Localization</em>" and "<em>Robotic Odor Source Localization via End-to-End Recurrent Deep Reinforcement Learning</em>", are accepted on <a href="https://ieeexplore.ieee.org/xpl/conhome/10473521/proceeding" target="_blank">IEEE IRC 2023 Conference</a>. 
+                        </li>
+                        <br>
+                        <li>
+                          &#128221 <strong>06-25-2023</strong>: Our paper, entitled "<em>Vision and Olfactory-Based Wildfire Monitoring with Uncrewed Aircraft Systems</em>", is accepted at the <a href="https://ieeexplore.ieee.org/xpl/conhome/10202211/proceeding" target="_blank">IEEE UR 2023</a>.
+                        </li>
+                        <br>
+                        <li>
+                          &#128221 <strong>04-01-2023</strong>: Our paper, entitled "<em>Learn to Trace Odors: Robotic Odor Source Localization via Deep Learning Methods with Real-world Experiments</em>", is accepted at the <a href="https://ieeexplore.ieee.org/abstract/document/10115175" target="_blank">IEEE SoutheastCon 2023</a>.
+                        </li>
+                        <br> 
+                        <li>
+                          &#128221 <strong>02-06-2023</strong>: Our paper, entitled "<em>Autonomous Underwater Vehicle Based Chemical Plume Tracing via Deep Reinforcement Learning Methods</em>", is published on <a href="https://www.mdpi.com/2077-1312/11/2/366" target="_blank">Journal of Marine Science and Engineering</a>.
+                        </li>
+                        <br>
+                      </div>
+                      <!-- news 2022 -->
+                      <div class="grid-item news y2022">
+                        <p class="papertitle" id="2022"><b>2022</b></p>
+                        <li>
+                          &#127881 <strong>09-01-2022</strong>: I start a new position of Assistant Professor of Electrical Engineering at <a href="https://www.latech.edu/" target="_blank">Louisiana Tech University</a>.
+                        </li>
+                        <br>
+                        <li>
+                          &#127881 <strong>01-12-2022</strong>: I start a new position of Visiting Assistant Professor of Electrical Engineering at <a href="https://daytonabeach.erau.edu/college-engineering/electrical-engineering-computer-science" target="_blank">Embry-Riddle Aeronautical University</a>.
+                        </li>
+                        <br>
+                      </div>
+                      <!-- news 2021 -->
+                      <div class="grid-item news y2021">
+                        <p class="papertitle" id="2021"><b>2021</b></p>
+                        <li>
+                          &#127891 <strong>12-30-2021</strong>: I obtain my Ph.D. in Electrical Engineering and Computer Science from <a href="https://daytonabeach.erau.edu/college-engineering/electrical-engineering-computer-science" target="_blank">Embry-Riddle Aeronautical University</a>.
+                        </li>
+                      </div>
+
+            
                       
                       <!-- publication -->
-                      <div class="list-item publication" data-category="publication">
+                      <div class="grid-item publication">
 
                         <!-- AI-based OSL  -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -1388,7 +1434,7 @@
                       </div>
 
                       <!-- Teaching -->
-                      <div class="list-item teaching" data-category="teaching">
+                      <div class="grid-item teaching">
                       
                         <!-- Teaching Statement -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -1480,7 +1526,7 @@
                       </div>
                       
                       <!-- advising -->
-                      <div class="list-item advising" data-category="advising">
+                      <div class="grid-item advising">
                         
                         <!-- Graduate student title -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -4690,88 +4736,64 @@
       </tbody>
     </table>
 
+    <!-- JavaScript -->
     <script>
+      let categoryFilter = '.news';
+      let yearFilter = '*';
 
-      // Isotope grid.
-      var $grid = $('.grid').isotope({
-        itemSelector: '.list-item',
+      const $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
         layoutMode: 'fitRows',
-        transitionDuration: 0,
-        stagger: 10,
-        initLayout: false,
-        getSortData: {
-          name: '.name',
-          symbol: '.symbol',
-          number: '.number parseInt',
-          category: '[data-category]',
-          weight: function( itemElem ) {
-            var weight = $( itemElem ).find('.weight').text();
-            return parseFloat( weight.replace( /[\(\)]/g, '') );
-          }
-        }
+        hiddenStyle: {
+          opacity: 0
+        },
+        visibleStyle: {
+          opacity: 1
+        },
+        transitionDuration: '0.4s'
       });
 
-      // Bind filter button click.
-      $('#filters').on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
-        localStorage.setItem('filterValue', filterValue);
+      function applyCombinedFilter() {
+        const filterValue = categoryFilter === '.news'
+          ? categoryFilter + yearFilter
+          : categoryFilter;
+
         $grid.isotope({ filter: filterValue });
+      }
+
+      $('#category-filters').on('click', 'button', function () {
+        $('#category-filters .is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+
+        categoryFilter = $(this).attr('data-filter');
+
+        if (categoryFilter === '.news') {
+          $('#year-filters').fadeIn(200);
+          $('#year-title').fadeIn(200);
+        } else {
+          $('#year-filters').fadeOut(200);
+          $('#year-title').fadeOut(200);
+          yearFilter = '*';
+          $('#year-filters .is-checked').removeClass('is-checked');
+          $('#year-filters button[data-filter="*"]').addClass('is-checked');
+        }
+
+        applyCombinedFilter();
       });
 
-      // Change is-checked class on buttons.
-      $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
-        });
+      $('#year-filters').on('click', 'button', function () {
+        $('#year-filters .is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+
+        yearFilter = $(this).attr('data-filter');
+        applyCombinedFilter();
       });
 
-      function update_isotope() {
-        // Retrieve cached button click.
-        var defaultFilterValue = localStorage.getItem('filterValue');
-        if (defaultFilterValue == null) {
-          defaultFilterValue = ".research"
-        }
-        $grid.isotope({ filter: defaultFilterValue });
-        var buttons = document.getElementsByClassName("button");
-        for (var currButton of buttons) {
-          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
-            currButton.classList.add('is-checked');
-          } else {
-            currButton.classList.remove('is-checked');
-          }
-        }
-      }
-
-      function toggle_bio() {
-        var x = document.getElementById("more-bio");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-
-      function toggle_highlights() {
-        var x = document.getElementById("main-highlights");
-        var y = document.getElementById("more-highlights");
-        var b = document.getElementById("toggle_highlights_button")
-        if (y.style.display === "none") {
-          x.style.display = "none";
-          y.style.display = "block";
-          b.innerHTML = "Show less"
-          update_isotope();
-        } else {
-          x.style.display = "block";
-          y.style.display = "none";
-          b.innerHTML = "Show more"
-          update_isotope();
-        }
-      }
-
-      update_isotope();
-
+      $(document).ready(function () {
+        $('#year-filters').show(); // assume default is news
+        $('#year-title').show();
+        applyCombinedFilter();
+      });
     </script>
   </body>
 </html>

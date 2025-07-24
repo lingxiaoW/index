@@ -1,0 +1,8 @@
+@article{mahmud2025graph,
+  title={A Graph Neural Network based deep learning framework for predicting the thermomechanical behavior of thermoset shape memory polymers},
+  author={Mahmud, Khan Raqib and Wang, Lingxiao and Chen, Jinyuan and Hassan, Sunzid},
+  journal={Polymer},
+  pages={128771},
+  year={2025},
+  publisher={Elsevier}
+}

@@ -204,17 +204,17 @@ span.highlight {
 
 .image-slider {
   position: relative;
-  width: 160px;
-  height: 100px;
+  width: 160px;           
+  aspect-ratio: 16 / 10;  
   overflow: hidden;
 }
 
 .slider-img {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;     
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
   z-index: 0;
@@ -260,8 +260,8 @@ span.highlight {
 
 @media (max-width: 600px) {
   .image-slider {
-    width: 100px;
-    height: auto;
+    width: 65vw;        
+    max-width: 160px;   
     margin: 0 auto;
   }
 

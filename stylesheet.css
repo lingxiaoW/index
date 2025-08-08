@@ -204,20 +204,30 @@ span.highlight {
 
 .image-slider {
   position: relative;
-  width: 160px;           
-  aspect-ratio: 16 / 10;  
+  width: 160px;           /* desktop width */
   overflow: hidden;
 }
+/* Fallback aspect ratio (works everywhere) */
+.image-slider::before {
+  content: "";
+  display: block;
+  padding-top: 62.5%;     /* 100 / 160 = 0.625 => ~16:10 */
+}
 
-.slider-img {
+.image-slider .slider-img {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
-  object-fit: contain;     
+  height: 100% !important; /* ensure it fills the box even on mobile */
+  object-fit: contain;      /* or 'cover' if you prefer */
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
   z-index: 0;
+}
+
+.image-slider .slider-img.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .slider-img.active {
@@ -241,13 +251,9 @@ span.highlight {
   text-align: center;
   cursor: pointer;
   z-index: 10;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.2s ease-in-out;
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-}
-
-.image-slider:hover .slider-btn {
-  opacity: 1;
 }
 
 .prev-btn {
@@ -260,10 +266,26 @@ span.highlight {
 
 @media (max-width: 600px) {
   .image-slider {
-    width: 65vw;        
-    max-width: 160px;   
+    width: 65vw;          /* responsive width on phones */
+    max-width: 160px;     /* cap at desktop size */
     margin: 0 auto;
   }
+
+  .slider-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+
+  .slider-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
 
   .slider-btn {
     width: 26px;

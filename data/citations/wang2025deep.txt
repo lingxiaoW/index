@@ -1,0 +1,8 @@
+@inproceedings{wang2025deep,
+  title={Deep Learning-Based Aerosol and Ocean Data Retrieval from Satellite Polarimeter Measurements},
+  author={Wang, Lingxiao and Stamnes, Snorre and Hassan, Sunzid and Isiani, Alexander and Sturdivant, Cheston and Le, Hoang My and Mahmud, Khan Raqib},
+  booktitle={SoutheastCon 2025},
+  pages={1542--1547},
+  year={2025},
+  organization={IEEE}
+}

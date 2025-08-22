@@ -860,6 +860,44 @@
                         <!-- Knowledge-Driven Framework for OSL -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
+
+
+                            <!-- Semantic OSL -->
+                            <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                                  <source src="images/publication/paper_videos/semantic_osl_video_new.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                  </video></div>
+                                  <img src='images/publication/paper_covers/semantic_osl.png' width="160">
+                                </div>
+                                <script type="text/javascript">
+                                  function regnerf_start() {
+                                    document.getElementById('regnerf_image').style.opacity = "1";
+                                  }
+
+                                  function regnerf_stop() {
+                                    document.getElementById('regnerf_image').style.opacity = "0";
+                                  }
+                                  regnerf_stop()
+                                </script>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/11077500">
+                                  <span class="papertitle">Semantic Odor Source Localization via Visual and Olfactory Integrated Navigation</span>
+                                </a>
+                                <br>
+                                <strong>Lingxiao Wang</strong>,
+                                Sunzid Hassan,
+                                Khan Mahmud
+                                <br>
+                                <em>IEEE AIRC</em>, 2025
+                                <p>We present a semantic odor source localization method using Large Language Models in a household environment.</p>
+                                <a href="data/papers/Semantic Odor Source Localization via Visual and Olfactory Integrated Navigation.pdf" target="_blank">PDF</a> | 
+                                <a href="data/citations/wang2025semantic.txt" target="_blank">Citation</a>
+                              </td>
+                            </tr> 
                             
                             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
                               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -2173,94 +2211,10 @@
                     
 
 
-                  <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()"  bgcolor="#ffffd0">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                      <div class="one">
-                        <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
-                        <source src="images/rawnerf.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video></div>
-                        <img src='images/rawnerf.jpg' width="160">
-                      </div>
-                      <script type="text/javascript">
-                        function rawnerf_start() {
-                          document.getElementById('rawnerf_image').style.opacity = "1";
-                        }
-
-                        function rawnerf_stop() {
-                          document.getElementById('rawnerf_image').style.opacity = "0";
-                        }
-                        rawnerf_stop()
-                      </script>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                      <a href="https://bmild.github.io/rawnerf/index.html">
-                        <span class="papertitle">NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</span>
-                      </a>
-                      <br>
-                      <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-                      <a href="https://phogzone.com/">Peter Hedman</a>,
-                      <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>, <br>
-                      <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-                      <strong>Jonathan T. Barron</strong>
-                      <br>
-                      <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                      <br>
-                      <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
-                /
-                      <a href="https://arxiv.org/abs/2111.13679">arXiv</a>
-                /
-                      <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
-                      <p></p>
-                      <p>
-                        Properly training NeRF on raw camera data enables HDR view synthesis and bokeh, and outperforms multi-image denoising.</p>
-                    </td>
-                  </tr> 
+                
                   
           
-                  <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                      <div class="one">
-                        <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
-                        <source src="images/regnerf_after.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video></div>
-                        <img src='images/regnerf_before.jpeg' width="160">
-                      </div>
-                      <script type="text/javascript">
-                        function regnerf_start() {
-                          document.getElementById('regnerf_image').style.opacity = "1";
-                        }
-
-                        function regnerf_stop() {
-                          document.getElementById('regnerf_image').style.opacity = "0";
-                        }
-                        regnerf_stop()
-                      </script>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                      <a href="https://m-niemeyer.github.io/regnerf/index.html">
-                        <span class="papertitle">RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs</span>
-                      </a>
-                      <br>
-                      <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>,
-                      <strong>Jonathan T. Barron</strong>,
-                      <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-                      <a href="https://msmsajjadi.github.io/">Mehdi S. M. Sajjadi</a>, 
-                      <a href="http://www.cvlibs.net/">Andreas Geiger</a>,
-                      <a href="http://www2.informatik.uni-freiburg.de/~radwann/">Noha Radwan</a>
-                      <br>
-                <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                      <br>
-                      <a href="https://m-niemeyer.github.io/regnerf/index.html">project page</a>
-                /
-                      <a href="https://arxiv.org/abs/2112.00724">arXiv</a>
-                /
-                      <a href="https://www.youtube.com/watch?v=QyyyvA4-Kwc">video</a>
-                      <p></p>
-                      <p>Regularizing unseen views during optimization enables view synthesis from as few as 3 input images.</p>
-                    </td>
-                  </tr> 
+                  
 
 
                   <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
@@ -5023,7 +4977,7 @@
                 <td style="padding:0px">
                   <br>
                   <p style="text-align:center;font-size:small;">
-                    Updated in 08-06-2025 | <a href="https://github.com/jonbarron/jonbarron_website">Website Template</a> 
+                    Updated in 08-22-2025 | <a href="https://github.com/jonbarron/jonbarron_website">Website Template</a> 
                   </p>
                 </td>
               </tr>

@@ -1,0 +1,8 @@
+@inproceedings{wang2025semantic,
+  title={Semantic Odor Source Localization via Visual and Olfactory Integrated Navigation},
+  author={Wang, Lingxiao and Hassan, Sunzid and Mahmud, Khan Raqib},
+  booktitle={2025 6th International Conference on Artificial Intelligence, Robotics and Control (AIRC)},
+  pages={87--93},
+  year={2025},
+  organization={IEEE}
+}

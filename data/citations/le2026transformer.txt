@@ -1,0 +1,8 @@
+@inproceedings{le2026transformer,
+  title={A Transformer-Based Forward Model for Aerosol and Ocean Data Retrieval from Polarimeters},
+  author={Le, Hoang My and Wang, Lingxiao and Stamnes, Snorre and Mahmud, Khan Raqib},
+  booktitle={SoutheastCon 2026},
+  pages={1--6},
+  year={2026},
+  organization={IEEE}
+}

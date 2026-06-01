@@ -1,0 +1,8 @@
+@inproceedings{wang2026gas,
+  title={Gas Monitoring Via an Integrated Stationary Sensor and Mobile Robot System},
+  author={Wang, Lingxiao and Zhang, Zheng},
+  booktitle={SoutheastCon 2026},
+  pages={1--6},
+  year={2026},
+  organization={IEEE}
+}
